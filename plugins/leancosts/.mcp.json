@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "leancosts": {
+      "type": "http",
+      "url": "${LEANCOSTS_MCP_URL:-https://api.leancosts.com/api/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${LEANCOSTS_PAT}"
+      }
+    }
+  }
+}

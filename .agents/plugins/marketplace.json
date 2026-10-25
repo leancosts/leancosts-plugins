@@ -1,0 +1,20 @@
+{
+  "name": "leancosts",
+  "interface": {
+    "displayName": "leancosts"
+  },
+  "plugins": [
+    {
+      "name": "leancosts",
+      "source": {
+        "source": "local",
+        "path": "./plugins/leancosts"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

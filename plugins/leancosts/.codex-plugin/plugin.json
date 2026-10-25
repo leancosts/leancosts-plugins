@@ -1,0 +1,30 @@
+{
+  "name": "leancosts",
+  "version": "0.1.1",
+  "description": "Take one leancosts savings opportunity from the register to executed from the terminal: triage, change request, dry run, apply with your own credentials, receipt. leancosts never touches your cloud.",
+  "author": {
+    "name": "leancosts",
+    "url": "https://leancosts.com"
+  },
+  "homepage": "https://docs.leancosts.com/how-to/use-with-an-agent/",
+  "repository": "https://github.com/intersector-io/leancosts-plugins",
+  "license": "MIT",
+  "keywords": ["finops", "cloud-costs", "mcp", "savings"],
+  "skills": "./skills/",
+  "mcpServers": {
+    "leancosts": {
+      "type": "http",
+      "url": "https://api.leancosts.com/api/mcp",
+      "bearer_token_env_var": "LEANCOSTS_PAT"
+    }
+  },
+  "interface": {
+    "displayName": "leancosts",
+    "shortDescription": "Act on cloud savings from the terminal",
+    "longDescription": "Take one leancosts savings opportunity from the register to executed, and connect a cloud to its first sync, with your own cloud credentials. leancosts only reads your cloud.",
+    "developerName": "leancosts",
+    "category": "Productivity",
+    "websiteURL": "https://leancosts.com",
+    "defaultPrompt": ["Take the top leancosts savings opportunity to executed"]
+  }
+}

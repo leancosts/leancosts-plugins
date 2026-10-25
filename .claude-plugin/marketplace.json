@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "leancosts",
+  "description": "leancosts plugins for Claude Code: act on your cloud savings opportunities from the terminal.",
+  "owner": {
+    "name": "leancosts",
+    "url": "https://leancosts.com"
+  },
+  "plugins": [
+    {
+      "name": "leancosts",
+      "source": "./plugins/leancosts",
+      "description": "Take one leancosts savings opportunity from the register to executed from the terminal, with your own cloud credentials."
+    }
+  ]
+}
