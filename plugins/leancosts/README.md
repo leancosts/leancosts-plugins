@@ -7,6 +7,10 @@ Two skills that let Claude Code act on [leancosts](https://leancosts.com), the r
 1. Create a Personal Access Token in leancosts: user menu, Settings, Tokens (`app.leancosts.com/settings/api-tokens`).
 2. Install the plugin. Claude Code asks for the token once and keeps it in your system's credential store.
 
+```text
+/plugin install leancosts --marketplace leancosts/leancosts-plugins
+```
+
 ## What it connects to
 
 The plugin adds one MCP server, `https://api.leancosts.com/api/mcp`, and sends your token to it as a bearer token. Every step a skill takes is a call to that server's tools. It sends nothing anywhere else.

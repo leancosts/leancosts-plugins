@@ -1,6 +1,6 @@
 ---
 name: connect
-description: Connect a cloud to leancosts from the terminal and watch the first sync land: check where setup stands, run the read-only grant with the user's own cloud CLI, create the connection, and confirm the first sync. Use when the user says "connect my AWS account to leancosts", "connect Azure to leancosts", "set up leancosts", or asks what is still missing in leancosts setup.
+description: Connect a cloud to leancosts from the terminal and watch the first sync land. Check where setup stands, run the read-only grant with the user's own cloud CLI, create the connection, and confirm the first sync. Use when the user says "connect my AWS account to leancosts", "connect Azure to leancosts", "set up leancosts", or asks what is still missing in leancosts setup.
 ---
 
 # Connect a cloud to leancosts
