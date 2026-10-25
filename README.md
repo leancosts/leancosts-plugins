@@ -11,7 +11,7 @@ export LEANCOSTS_PAT=leancosts_pat_xxxxxxxx
 ```
 
 ```text
-/plugin marketplace add intersector-io/leancosts-plugins
+/plugin marketplace add leancosts/leancosts-plugins
 /plugin install leancosts@leancosts
 ```
 
@@ -19,7 +19,7 @@ export LEANCOSTS_PAT=leancosts_pat_xxxxxxxx
 
 ```bash
 export LEANCOSTS_PAT=leancosts_pat_xxxxxxxx
-codex plugin marketplace add intersector-io/leancosts-plugins
+codex plugin marketplace add leancosts/leancosts-plugins
 codex plugin add leancosts@leancosts
 ```
 
