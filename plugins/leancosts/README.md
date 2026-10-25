@@ -14,7 +14,9 @@ Two skills that let Claude Code act on [leancosts](https://leancosts.com), the r
 
 ## What it connects to
 
-The plugin adds one MCP server, `https://api.leancosts.com/api/mcp`, which you sign in to with OAuth. Every step a skill takes is a call to that server's tools. It sends nothing anywhere else.
+The plugin adds one MCP server, `https://api.leancosts.com/api/mcp`, which you sign in to with OAuth. Every leancosts step a skill takes is a call to that server's tools.
+
+The commands the skills run on your machine use your own cloud CLI, so they reach your cloud provider (AWS, Azure, Google Cloud or Oracle Cloud) with your credentials, and only after you answer yes. The remediation script then reports its receipt to `api.leancosts.com`. The plugin sends nothing anywhere else.
 
 ## What it runs on your machine
 
