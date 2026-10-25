@@ -1,12 +1,12 @@
 {
   "name": "leancosts",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Take one leancosts savings opportunity from the register to executed from the terminal: triage, change request, dry run, apply with your own credentials, receipt. leancosts never touches your cloud.",
   "author": {
     "name": "leancosts",
     "url": "https://leancosts.com"
   },
-  "homepage": "https://docs.leancosts.com/how-to/use-with-an-agent/",
+  "homepage": "https://leancosts.com",
   "repository": "https://github.com/leancosts/leancosts-plugins",
   "license": "MIT",
   "keywords": ["finops", "cloud-costs", "mcp", "savings"],
