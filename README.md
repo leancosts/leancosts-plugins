@@ -6,14 +6,12 @@ This repository is a copy. The source lives with the product and is exported by 
 
 ## Claude Code
 
-```bash
-export LEANCOSTS_PAT=leancosts_pat_xxxxxxxx
-```
-
 ```text
 /plugin marketplace add leancosts/leancosts-plugins
 /plugin install leancosts@leancosts
 ```
+
+Claude Code asks for your Personal Access Token at install and keeps it in your system's credential store.
 
 ## Codex
 
@@ -23,7 +21,7 @@ codex plugin marketplace add leancosts/leancosts-plugins
 codex plugin add leancosts@leancosts
 ```
 
-The plugin reads the token from `LEANCOSTS_PAT`.
+Codex reads the token from `LEANCOSTS_PAT`.
 
 ## Docs
 

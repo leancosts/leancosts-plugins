@@ -1,6 +1,6 @@
 {
   "name": "leancosts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Take one leancosts savings opportunity from the register to executed from the terminal: triage, change request, dry run, apply with your own credentials, receipt. leancosts never touches your cloud.",
   "author": {
     "name": "leancosts",
