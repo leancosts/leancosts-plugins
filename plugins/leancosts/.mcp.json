@@ -2,10 +2,7 @@
   "mcpServers": {
     "leancosts": {
       "type": "http",
-      "url": "https://api.leancosts.com/api/mcp",
-      "headers": {
-        "Authorization": "Bearer ${user_config.api_token}"
-      }
+      "url": "https://api.leancosts.com/api/mcp"
     }
   }
 }

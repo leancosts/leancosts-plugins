@@ -11,7 +11,7 @@ This repository is a copy. The source lives with the product and is exported by 
 /plugin install leancosts@leancosts
 ```
 
-Claude Code asks for your Personal Access Token at install and keeps it in your system's credential store.
+Then run `/mcp`, pick leancosts, choose Authenticate and approve in the browser. There is no key to copy.
 
 ## Codex
 

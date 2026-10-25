@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "leancosts",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Take one leancosts savings opportunity from the register to executed from the terminal: triage, change request, dry run, apply with your own credentials, receipt. leancosts never touches your cloud.",
   "author": {
     "name": "leancosts",
@@ -14,14 +14,5 @@
   "icon": "./icon.png",
   "repository": "https://github.com/leancosts/leancosts-plugins",
   "license": "MIT",
-  "keywords": ["finops", "cloud-costs", "mcp", "savings"],
-  "userConfig": {
-    "api_token": {
-      "type": "string",
-      "title": "leancosts Personal Access Token",
-      "description": "Create one in leancosts: user menu, Settings, Tokens. It starts with leancosts_pat_.",
-      "sensitive": true,
-      "required": true
-    }
-  }
+  "keywords": ["finops", "cloud-costs", "mcp", "savings"]
 }
