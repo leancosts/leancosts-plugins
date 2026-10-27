@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "leancosts",
   "displayName": "leancosts",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Take one leancosts savings opportunity from the register to executed from the terminal: triage, change request, dry run, apply with your own credentials, receipt. leancosts never touches your cloud.",
   "author": {
     "name": "leancosts",

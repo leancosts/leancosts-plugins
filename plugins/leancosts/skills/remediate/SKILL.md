@@ -14,9 +14,9 @@ change request stands (`get_change_request`), and end. Never loop to the next on
 
 - With an id from the user, use it.
 - Without one, call `list_opportunities` (view `register`, open rows) and show the **top 5 by monthly
-  value**: title, resource, estimate, confidence. Ask which one. Wait.
+  value**: title, resource, estimate. Ask which one. Wait.
 
-Then call `get_opportunity` and show its calculation (the formula and the numbers behind the claim).
+Then call `get_opportunity` and show the claim and what to run, as the tool returns them. Do not reconstruct or print a formula: a paid tenant gets the calculation from the tool, and a free-band tenant gets none.
 
 ## 2. First confirmation: "Accept and file a change request?"
 
