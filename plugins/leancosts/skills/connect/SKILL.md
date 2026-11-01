@@ -35,8 +35,12 @@ the `RoleArn` output as below. Otherwise write `payerRoleStack.template` to
 `payerRoleStack.fileName`, show the user the role it creates, and ask "Create this stack in <account>?". Only after
 a literal yes, run `payerRoleStack.deployCommand` there. Then call `create_aws_connection` with the `RoleArn` the
 command printed and the `externalId` from the artifacts. For an Organization, `memberRoleStack` is the StackSet
-template for the member accounts; the user deploys it from the management account and sets it under Member role in
-the web app.
+template for the member accounts; the user deploys it from the management account. Once the StackSet is deployed or
+the CUR export exists, call `probe_connection` (`provider: "aws"`). For each step it reports `missing`, call
+`update_aws_connection_setup` with `memberRoleArnTemplate` (from `get_grant_artifacts`, `memberRoleStack.roleArnTemplate`, never an ARN built by hand) or `curS3Bucket`, `curS3Prefix` and `curFormat`, then
+`probe_connection` again until the step is `done`, then `trigger_sync`. A locked trial is refused `probe_connection`:
+read the steps from `get_onboarding_status` (each AWS connection carries its `setup`). Pass `setupSkippedSteps` only
+after the user said in words that they skip a step.
 
 **GCP.** Call `get_grant_artifacts` (`provider: "gcp"`), show the commands, and run them only after a literal yes.
 There is no tool to create a GCP connection. Send the user to Admin → Connections → Add connection → Google Cloud in the web app to finish it,
