@@ -46,16 +46,17 @@ after the user said in words that they skip a step.
 There is no tool to create a GCP connection. Send the user to Admin → Connections → Add connection → Google Cloud in the web app to finish it,
 then continue from step 4.
 
-**OCI.** Call `create_oci_connection` with the tenancy OCID and the home region. The OCID of the read-only user is
-optional (a trial still needs it): when the user is created by a Terraform file, its OCID is the user_ocid output
-after the apply, so create the connection, let the user apply, call `set_oci_user_ocid` with that OCID (it is set once),
-then `test_connection`. A test refuses until the user OCID is set. The create answers the public key and the policy
+**OCI.** Call `create_oci_connection` with the tenancy OCID and the home region. The create takes no user OCID: its key
+is made by that call. Once the user added the public key (when the user is created by a Terraform file, its OCID is the
+user_ocid output after the apply), call `set_oci_user_ocid` with that OCID: it reads the tenancy with the stored key and
+that user, and stores the user only when the read passes (a refusal stores nothing and says why). Then
+`probe_connection` (`provider: "oci"`) checks the cost reports and the child tenancies. The create answers the public key and the policy
 statements. To show them again later, call `get_grant_artifacts`
 (`provider: "oci"`, plus `connectionId` when the organization holds more than one connection). The user pastes the
 policy statements and uploads the public key in the OCI console; no command runs here. When the customer's
 repository already uses Terraform, use the `terraform` field of the create and `get_grant_artifacts` answers instead
 (a connected file and a child-tenancy file, each alone in its own directory; a trial gets none): the user applies the
-connected file, you call `set_oci_user_ocid` with its user_ocid output, and each child tenancy's owner applies the
+connected file, you call `set_oci_user_ocid` with its user_ocid output (it proves and stores it), and each child tenancy's owner applies the
 child file with their own profile. Then continue from step 4.
 
 ## 4. First sync
