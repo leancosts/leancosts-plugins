@@ -16,12 +16,12 @@ Then run `/mcp`, pick leancosts, choose Authenticate and approve in the browser.
 ## Codex
 
 ```bash
-export LEANCOSTS_PAT=leancosts_pat_xxxxxxxx
 codex plugin marketplace add leancosts/leancosts-plugins
 codex plugin add leancosts@leancosts
+codex mcp login leancosts
 ```
 
-Codex reads the token from `LEANCOSTS_PAT`.
+The last command opens the browser to sign in. There is no key to copy.
 
 ## Docs
 

@@ -1,6 +1,6 @@
 {
   "name": "leancosts",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Take one leancosts savings opportunity from the register to executed from the terminal: triage, change request, dry run, apply with your own credentials, receipt. leancosts never touches your cloud.",
   "author": {
     "name": "leancosts",
@@ -14,8 +14,7 @@
   "mcpServers": {
     "leancosts": {
       "type": "http",
-      "url": "https://api.leancosts.com/api/mcp",
-      "bearer_token_env_var": "LEANCOSTS_PAT"
+      "url": "https://api.leancosts.com/api/mcp"
     }
   },
   "interface": {
